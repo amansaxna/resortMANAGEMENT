@@ -1,0 +1,196 @@
+<!--
+	//===========resort mangement========
+	//using grids:following schema
+	//background color: orange :symbolizes Green indicates nature and health, making it a great color for an outdoors travel \\agency, but red, \\which symbolizes high activity, may be better for city travel.
+	//introbar----RESORT RESERVATION
+	//navbar----searchlocation----heck-in--- checkout---no.of adult----find hotels
+	//picv----resort pics/video---sliding
+	//attract----
+	//counter----x--hotels---y--rooms
+	//booking-----hyperlink
+	//footer---complain/feedback-----hyperlink
+		//////////////////////////
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Great Vibes', cursive;
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script|Orbitron|Permanent+Marker" rel="stylesheet">
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>resort management</title>
+	<link rel="icon" href="static/images/fev1.png" sizes="16x16" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/frontpagecss.css">
+		<style type="text/css">
+
+		</style>
+		<script>
+				window.onscroll = function() {myFunction()};
+					function myFunction() {
+  					if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 450) {
+  						move();move1();
+  					}
+				function move() 
+				{
+				  	var elem = document.getElementById("myBar");   
+				  	var width = 0;
+				  	var id = setInterval(frame, 150);
+				  	function frame() 
+				  	{
+				    	if (width == 14)
+				    	{
+				      		clearInterval(id);
+				    	} 
+				    	else 
+				    	{
+				      		width++; 
+				      		document.getElementById("myBar").innerHTML=width; 
+				    	}
+				    }
+				}
+				function move1() 
+				{
+				  	var elem = document.getElementById("myBar1");   
+				  	var width = 0;
+				  	var id = setInterval(frame, 150);
+				  	function frame() 
+				  	{
+				    	if (width == 14)
+				    	{
+				      		clearInterval(id);
+				    	} 
+				    	else 
+				    	{
+				      		width++; 
+				      		document.getElementById("myBar1").innerHTML=width; 
+				    	}
+				    }
+				}
+				}
+				function showCoords(event) {
+				  var x = event.clientX;
+				  var y = event.clientY;
+
+				  var newposX = 250+ x / 100;//6
+				  var newposY = 25+ y / 100;//3
+				  //var coor = "X coords: " + x + ", Y coords: " + y;
+				  //document.getElementById("demo").innerHTML = coor;
+				  document.getElementById("off").style.bottom= newposX+"px";
+				  document.getElementById("off").style.right= newposY+"px";
+				}
+				function showoffers() {
+				  var text = "You Had Reedemed Our's Today's Offer\n 02255";
+				  alert(text);
+				}
+				var close = document.getElementsByClassName("closebtn");
+				var i;
+
+				for (i = 0; i < close.length; i++) {
+				  close[i].onclick = function(){
+				    var div = this.parentElement;
+				    div.style.opacity = "0";
+				    setTimeout(function(){ div.style.display = "none"; }, 600);
+				  }
+				}
+				function clos()
+				{
+					document.getElementById("aler").style.display = "none";
+				}
+			</script>
+</head>
+<body onmousemove="showCoords(event)">
+
+
+	<div class ="navbar">
+
+		<form method="post" action="{{ url_for('search')}}">
+			<label for="">Search for Hotels :</label><br>
+<!--				<input list="country" name="country" placeholder="Country,State" autofocus required>
+					  <datalist id="country">
+					    <option value="india">
+					    <option value="australia">
+					    <option value="india">
+					    <option value="delhi">
+					    <option value="high">
+					  </datalist>
+-->
+  				<input type="text" name="location" placeholder="Country,State" autofocus required >
+  			<label for="country">check-In:</label>
+  				<input type="date"  name="check_in" min="2018-01-02" placeholder="Check-in Date" value="{{day}}">
+  			check-out:
+  				<input type="date" name="check_out" placeholder="check-out Date" value="{{day}}">
+  				<input type="number" name="search" placeholder="No Of people">
+  				<input type="submit" value="Search >>">
+		</form>
+		
+	</div>
+	<div class="introbar">
+		<span style="padding-right: 20px;padding-left: 10px;">Resort Reservation</span>
+		<ul>
+			<li><a href="#">Hotels and Resorts</a></li>
+			<li><a href="#"> My Reservations</a></li>
+			<li><a href="#"> OFFERS</a></li>
+		</ul>
+		<div class="login"><a href="#">LOGIN</a></div>
+	</div>
+	<DIV class="vic">
+		<video src="static/images/v1.mp4" autoplay loop style="width: 100%;height: 500px;object-fit: fill">
+		</video>
+		<div class="vidtxt">
+			<span>Exclusive Offer For You!!</span>
+			<br>
+			Login, to see various offers over 100's of our hotels world wide.
+			<div style="float: right;">See Details >></div>
+		</div>
+	</DIV>
+	<div class="attract">
+		GO SOME WHERE NEW !!<br><br>
+		<div class="container">
+			<img src="static/images/india.jpg" style="width:400px;overflow: auto;">
+			<span style="position: absolute;top: 90px;left:160px;color: white;">country</span>
+			<br>
+			15 Hotels
+		</div>
+		<div class="container">
+			<img src="static/images/india.jpg" style="width:400px;overflow: auto;">
+			<span style="position: absolute;top: 90px;left:160px;color: white;">country</span>
+			<br>
+			15 Hotels
+		</div>
+		<div class="container">
+			<img src="static/images/india.jpg" style="width:400px;overflow: auto;" >
+			<span style="position: absolute;top: 90px;left:160px;color: white;">country</span>
+			<br>
+			15 Hotels
+		</div>
+	</div>
+	<div class="counter">
+		Total No. Of Hotels Affiliated With Us--><br>
+		<div class="count">
+		  	<div id="myBar">0</div>Hotels
+		</div>
+		<div class="count">
+			<div id="myBar1">0</div>Rooms
+		</div>
+	</div>
+	<div class="footer">
+		
+	</div>
+	<div class="offer" id="off">
+	 Offer!!
+		<p id="demo"></p>
+	</div>
+	<div class="alert" id="aler" onclick="clos()">
+	  <span class="closebtn">&times;</span>  
+	  <strong>OFFER!</strong><br> Use This Special Offer Code To Avail Special Offer <br>
+	  <strong>02255</strong>
+	</div>
+<script type="text/javascript">
+	/*window.alert("HELLO WELCOME TO RR");
+	var d = new Date("2015-03-25");
+	document.getElementsByClassName(navbar).form.input.value = "1018-01-05" ;*/
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG-IN Resort Management</title>
+	<link rel="icon" href="images/fev1.png" sizes="16x16" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/loginc.css">
+	<style type="text/css">
+.window_1
+{
+	border: 1px solid brown;
+	border-radius: 5px;
+	width: 50%; height: 50%;
+	padding: auto;
+	margin: auto;
+	align-content: center;
+	text-align: center;
+	top: 20px;
+}
+.id
+{
+	display: inline-block;
+}
+.pass
+{
+	display: none;
+}
+		</style>
+		<script>
+function ask_password()	
+{	
+	var x = document.forms["login_form"]["id"].value;
+	if (x != "")
+	{
+		document.getElementById('id1').style.display='none';
+		document.getElementById('pass').style.display='inline-block';
+	}
+	else
+	{
+		alert("Enter the E-mail ID");
+	}
+}			
+		</script>
+</head>
+<body>
+	<br><br>
+	<div class="window_1">
+		RESORT RESERVATION<br><br>
+		Use Your RR E-Mail
+<br><br>
+		<form name = "login_form" method="post">
+			<div class="id" id="id1">
+				<label for="text">E-MAIL Address:</label>
+				<input type="text" name="id" placeholder="E-MAIL Address" autofocus required>
+				<br><br>
+				<button type="button" onclick="ask_password()">NEXT</button>
+				
+			</div>
+			<div class="pass" id="pass">
+				<label for="text">Password:</label>
+				<input type="password" name="password" placeholder="*******" autofocus required>
+				<br><br>
+				<input type="submit" name="" value="LOG_IN" onclick="document.getElementsByClassName('window_1').style.display='none';">
+			</div>
+		</form>
+	</div>
+	<div class="window_2">
+		log_in successfull
+	</div>
+	
+</body>
+</html>

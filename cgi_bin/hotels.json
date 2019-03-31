@@ -1,0 +1,55 @@
+{
+	"hotels": 
+	[
+		{
+			"hotel_id" : "1",
+			"state_id": "Delhi",
+			"country_id":"India",
+			"name" : "taj 1",
+			"address":"high palage 1",
+			"price_range":0,
+			"availibility":5,
+			"info":"this is a good hotel",
+			"rooms":
+			[
+				{
+					"room_no":"1",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				},
+				{
+					"room_no":"2",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				} 
+			]
+		},	
+	    {
+			"hotel_id" : "2",
+			"state_id": "Delhi",
+			"country_id":"India",
+			"name" : "taj 2",
+			"address":"high palage 2",
+			"price_range":0,
+			"availibility":5,
+			"info":"this is a good hotel",
+			"rooms":
+			[
+				{
+					"room_no":"1",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				},
+				{
+					"room_no":"2",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				}  
+			]
+		}
+	]
+}

@@ -1,0 +1,86 @@
+{
+	"hotels": 
+	[
+		{
+			"hotel_id" : "1",
+			"state_id": "Delhi",
+			"country_id":"India",
+			"name" : "taj 1",
+			"address":"high palage 1",
+			"price_range":"4000-5000",
+			"availibility":5,
+			"info":"this is a good hotel",
+			"room":
+			[
+				{
+					"room_id":"001",
+					"room_no":"1",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"     
+				},
+				{
+					"room_id":"002",
+					"room_no":"2",
+					"price":"4000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				} 
+			]
+		},	
+	    {
+			"hotel_id" : "2",
+			"state_id": "Delhi",
+			"country_id":"India",
+			"name" : "taj 2",
+			"address":"high palage 2",
+			"price_range":0,
+			"availibility":5,
+			"info":"this is a good hotel",
+			"room":
+			[
+				{
+					"room_id":"003",
+					"room_no":"1",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				},
+				{
+					"room_id":"004",
+					"room_no":"2",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				}  
+			]
+		},
+		{
+			"hotel_id" : "3",
+			"state_id": "Faridabad",
+			"country_id":"India",
+			"name" : "taj 3",
+			"address":"high palage 3",
+			"price_range":0,
+			"availibility":5,
+			"info":"this is a good hotel",
+			"room":
+			[
+				{
+					"room_id":"005",
+					"room_no":"1",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				},
+				{
+					"room_id":"006",
+					"room_no":"2",
+					"price":"5000",
+					"info":"live here it is beautiful",
+					"guest_id":"00"
+				}  
+			]
+		}
+	]
+}

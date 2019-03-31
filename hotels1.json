@@ -1,0 +1,212 @@
+{
+	"Hotels":
+	[
+	    {
+	       "Hotel_id"     : "1",
+	       "City_id"      : "Delhi",
+	       "Country_id"   : "India",
+	       "Name"         : "Jaypee Vasant Continental ",
+	       "Address"      : "Near PVR Priya, Munirka Marg, Vasant Vihar, New Delhi, Delhi 110057",
+	       "Price_Range"  : "5000-15000",
+	       "Availibility" : "3",
+	       "Info"         : "Set 5 km from Safdarjung train station, and 8 km from domestic airport", 
+			
+	       "Rooms":
+	       [
+               {
+                      "Room_No"  : "101",
+                      "Price"    : "5000",
+                      "Info"     : "This is a Mini-Suite Room with access to SPA and GYM and Complementary Breakfast is Provided with this Room",
+                      "Guest_ID" : "011"
+               },
+               {
+                      "Room_No"  : "201",
+                      "Price "   : "10000",
+                      "Info"     : "This is a Suite Room with Access to all the facilities of the hotel and also complementary breakfast is Provided with this room",
+                      "Guest_id" : "122"
+               },
+               {
+                      "Room_No"  : "310",
+                      "Price"    : "15000",
+                      "Info"     : "This is a Cabana Room with adjoining swimmig pool and Complementary Breakfast",
+
+                      "Guest_Id" : "555"
+               }
+
+	       ]
+	    },
+
+	    {
+	       "Hotel_id"     : "2",
+	       "City_id"      : "Delhi",
+	       "Country_id"   : "India",
+	       "Name"         : "THE LEELA PALACE ",
+	       "Address"      : " Africa Ave, Diplomatic Enclave, Chanakyapuri, New Delhi, Delhi 110023",
+	       "Price_Range"  : "10000-20000",
+	       "Availibility" : "3",
+	       "Info"         : "This palatial luxury hotel is 6.8 km from the Qutb complex and 7.9 km from Humayun's Tomb",
+					
+	       "Rooms"        :
+	       [
+               {
+                      "Room_No"  : "101",
+                      "Price"    : "10000",
+                      "Info"     : "This is a Mini-Suite Room with access to SPA and GYM and Complementary Breakfast is Provided with this Room",
+                      "Guest_ID" : "011"
+               },
+               {
+                      "Room_No"  : "201",
+                      "Price "   : "15000",
+                      "Info"     : "This is a Suite Room with Access to all the facilities of the hotel and also complementary breakfast is Provided with this room",
+                      "Guest_id" : "122"
+               },
+               {
+                      "Room_No"  : "310",
+                      "Price"    : "20000",
+                      "Info"     : "This is a Cabana Room with adjoining Swimming Pool and Complementary Breakfast",
+                      "Guest_Id" : "555"
+               }
+
+	       ]
+	    },
+
+	    {
+           "Hotel_id"     : "3",
+	       "City_id"      : "Delhi",
+	       "Country_id"   : "India",
+	       "Name"         : "ITC MAURYA ",
+	       "Address"      : "Sardar Patel Marg, Akhaura Block, Diplomatic Enclave, Chanakyapuri, New Delhi, Delhi 110021",
+	       "Price_Range"  : "15000-30000",
+	       "Availibility" : "3",
+	       "Info"         : "Across the street from Bhagwan Mahavir Vanasthali Park this grand, Mughal-inspired hotel is 7 km from India Gate", 
+
+	       "Rooms":
+	       [
+               {
+                      "Room_No"  : "101",
+                      "Price"    : "15000",
+                      "Info"     : "This is a Mini-Suite Room with access to SPA and GYM and Complementary Breakfast is Provided with this Room",
+                      "Guest_ID" : "011"
+               },
+               {
+                      "Room_No"  : "201",
+                      "Price "   : "20000",
+                      "Info"     : "This is a Suite Room with Access to all the facilities of the hotel and also complementary breakfast is Provided with this room",
+                      "Guest_id" : "122"
+               },
+               {
+                      "Room_No"  : "310",
+                      "Price"    : "30000",
+                      "Info"     : "This is a Cabana Room with adjoining Swimming Pool and Complementary Breakfast is Provided with this room",
+                      "Guest_id" : "555"
+               }
+
+	       ]
+	    },
+	    {
+           "Hotel_id"     : "4",
+	       "City_id"      : "Jaipur",
+	       "Country_id"   : "India",
+	       "Name"         : "The Lalit ",
+	       "Address"      : " 2B & 2C, Near Jagatpura Rd, Jaipur, Rajasthan 302017 ",
+	       "Price_Range"  : "15000-30000",
+	       "Availibility" : "3",
+	       "Info"         : "Set 2 km from the airport, this high-end hotel with Haveli architecture is 12 km from the City Palace complex and the 18th-century Jantar Mantar park. ", 
+
+	       "Rooms":
+	       [
+               {
+                      "Room_No"  : "101",
+                      "Price"    : "15000",
+                      "Info"     : "This is a Mini-Suite Room with access to SPA and GYM and Complementary Breakfast is Provided with this Room",
+                      "Guest_ID" : "011"
+               },
+               {
+                      "Room_No"  : "201",
+                      "Price "   : "20000",
+                      "Info"     : "This is a Suite Room with Access to all the facilities of the hotel and also complementary breakfast is Provided with this room",
+                      "Guest_id" : "122"
+               },
+               {
+                      "Room_No"  : "310",
+                      "Price"    : "30000",
+                      "Info"     : "This is a Cabana Room with adjoining Swimming Pool and Complementary Breakfast is Provided with this room",
+                      "Guest_id" : "555"
+               }
+
+	       ]
+	    },
+	    {
+
+	       "Hotel_id"     : "5",
+	       "City_id"      : "Jaipur",
+	       "Country_id"   : "India",
+	       "Name"         : "The Oberoi Rajvilas ",
+	       "Address"      : " Babaji Ka Modh, Goner Rd, Jaipur, Rajasthan 302031",
+	       "Price_Range"  : "50000-65000",
+	       "Availibility" : "3",
+	       "Info"         : "Set 5 km from Safdarjung train station, and 8 km from domestic airport", 
+			
+	       "Rooms":
+	       [
+               {
+                      "Room_No"  : "101",
+                      "Price"    : "50000",
+                      "Info"     : "This is a Mini-Suite Room with access to SPA and GYM and Complementary Breakfast is Provided with this Room",
+                      "Guest_ID" : "011"
+               },
+               {
+                      "Room_No"  : "201",
+                      "Price "   : "58000",
+                      "Info"     : "This is a Suite Room with Access to all the facilities of the hotel and also complementary breakfast is Provided with this room",
+                      "Guest_id" : "122"
+               },
+               {
+                      "Room_No"  : "310",
+                      "Price"    : "60000",
+                      "Info"     : "This is a Cabana Room with adjoining swimmig pool and Complementary Breakfast",
+
+                      "Guest_Id" : "555"
+               }
+
+	       ]
+	    },
+	    {
+	       "Hotel_id"     : "6",
+	       "City_id"      : "Jaipur",
+	       "Country_id"   : "India",
+	       "Name"         : "TRIDENT HOTEL JAIPUR ",
+	       "Address"      : "  Amber Fort Road, Jal Mahal, Jaipur, Rajasthan 302002",
+	       "Price_Range"  : "5000-10000",
+	       "Availibility" : "3",
+	       "Info"         : "Set 5 km from Safdarjung train station, and 8 km from domestic airport", 
+			
+	       "Rooms":
+	       [
+               {
+                      "Room_No"  : "101",
+                      "Price"    : "5000",
+                      "Info"     : "This is a Mini-Suite Room with access to SPA and GYM and Complementary Breakfast is Provided with this Room",
+                      "Guest_ID" : "011"
+               },
+               {
+                      "Room_No"  : "201",
+                      "Price "   : "6000",
+                      "Info"     : "This is a Suite Room with Access to all the facilities of the hotel and also complementary breakfast is Provided with this room",
+                      "Guest_id" : "122"
+               },
+               {
+                      "Room_No"  : "310",
+                      "Price"    : "10000",
+                      "Info"     : "This is a Cabana Room with adjoining swimmig pool and Complementary Breakfast",
+
+                      "Guest_Id" : "555"
+               }
+            ]
+	    },
+        {
+            
+        }
+
+	]
+} 

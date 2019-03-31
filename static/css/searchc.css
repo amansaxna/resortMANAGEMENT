@@ -1,0 +1,100 @@
+/*search page css */
+body,html 
+{
+  	margin: 0px;
+	padding: 0px;
+  	font-family: "Lucida Console", Monaco, monospace;
+  	/*background: -webkit-linear-gradient(to right, #42275a, #734b6d); /* Chrome 10-25, Safari 5.1-6 */
+ 	/*background: linear-gradient(to right, #42275a, #734b6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	font-size: 20px;
+}
+div
+{
+}
+.introbar
+{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	width: 100%;
+	z-index: 2;
+	background-color: white;
+}
+.login
+{
+	display: inline;
+	float: right;
+	position: absolute;
+	right: 10px;	
+}
+ul
+{
+	list-style-type: none;
+	display: inline;
+}
+li
+{
+	display: inline;
+	word-spacing:-2px;
+	letter-spacing: -1px;
+	padding-left: 5px;
+}
+li a:link
+{
+	color: black;
+}
+li a:visited
+{
+	color: black;
+}
+li::before
+{
+	content: " | ";
+}
+.picv
+{
+	height: 600px;
+	text-align: center;
+	background-color: black;
+	color: white;
+
+}
+.picv span
+{
+	margin: auto;
+	top: 100px;
+	font-size: 40px;color: white;
+}
+.show
+{
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+.content
+{
+ 	padding: 40px;	
+}
+.item1 { grid-area: image; }
+.item2 { grid-area: name; }
+.item3 { grid-area: address; }
+.item4 { grid-area: info; }
+.item5 { grid-area: book; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'image name name name name name'
+    'image address address info info book'
+    'image address address info info book';
+  grid-gap: 10px;
+  padding: 10px;
+  border:0.1px solid black; border-radius: 7px;
+  box-shadow: 2px 2px grey;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}

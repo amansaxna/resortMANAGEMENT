@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Resort </title>
+	<link rel="icon" href="static/images/fev1.png" sizes="16x16" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/searchc.css">
+		<style type="text/css">
+
+		</style>
+</head>
+<body>
+	<div class="introbar">
+		<span style="padding-right: 20px;padding-left: 10px;">Resort Reservation</span>
+		<ul>
+			<li><a href="#">Hotels and Resorts</a></li>
+			<li><a href="#"> My Reservations</a></li>
+			<li><a href="#"> OFFERS</a></li>
+		</ul>
+		<div class="login"><a href="#">LOGIN</a></div>
+	</div>
+	<div class="picv">
+		<img src="static/images/resort.gif" style="width: 100%;height: 94%; opacity: 0.5;">
+  		<div class="show">	
+			<span>
+				
+				<strong>
+				{{country}}
+				</strong> 
+		 		
+		 		<hr style="width: 100px;background-color: black;height: 5px; border-radius: 50px;">
+		 		<p id="date"></p>  12 Degree C
+		 	</span>
+	 	</div>
+	</div>
+	<div class="content">
+		Available hotels in {{country}}:<br>
+		{% for i in hotels %}
+			{% if i['state_id'] == country %}
+				<br>
+				<div class="grid-container">
+					<div class="item1"><img src="static/images/room.jpg" style="height: auto;width: 300px;background-size: cover;"> </div>
+					<div class="item2">{{ i['name'] }}</div>
+					<div class="item3">{{ i['state_id'] }}</div>  
+					<div class="item4">{{ i['info'] }}</div>
+					<div class="item5">{{ i['price_range'] }}<br>
+					<form method="post" action="{{ url_for('rooms')}}">
+						<!--solve this problem-->
+							<input type="text" name="id" value="{{ i['name'] }}" placeholder="rooms" style="display: none;">
+							<input type="submit"  name="submit" value="rooms">
+					</form>
+					</div>
+				</div>
+				<br>
+			{% endif %}
+		{% endfor %}
+
+	</div>
+	<script>
+		var d = new Date();
+		document.getElementById("date").innerHTML = d.getDate()+"/"+d.getMonth()+"/"+ d.getFullYear();
+	</script>
+</body>
+</html>
